@@ -4,7 +4,6 @@ function sum(fromN, toN) {
   let num = fromN;
 
   function add(fromN, toN) {
-
     if (fromN + 1 <= toN) {
       num += (fromN + 1)
       add(fromN + 1, toN)
@@ -12,12 +11,7 @@ function sum(fromN, toN) {
   }
 
   add(fromN, toN)
-
-
   return num;
-
 }
-
-console.log(sum(3, 7))
 
 module.exports = sum;
